@@ -1,0 +1,62 @@
+fields:
+    title:
+        label: Title
+        span: full
+        required: 1
+        type: text
+tabs:
+    fields:
+        matiere:
+            label: Matière
+            nameFrom: matiere_name
+            descriptionFrom: description
+            span: auto
+            required: 1
+            type: relation
+            tab: Base
+        when:
+            label: Quand
+            mode: date
+            span: auto
+            type: datepicker
+            firstDay: 1
+            tab: Base
+        description:
+            label: Description
+            size: small
+            span: full
+            type: textarea
+            tab: Base
+        user:
+            label: Utilisateur
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            required: 1
+            type: relation
+            tab: Base
+        fait:
+            label: Fait
+            span: auto
+            type: checkbox
+            tab: Base
+        priorite:
+            label: Priorité
+            options:
+                1: Faible
+                2: Moyenne
+                3: Importante
+            span: auto
+            default: '2'
+            type: dropdown
+            tab: Avancé
+        type:
+            label: Type
+            options:
+                1: Exercice
+                2: Interro
+                3: DM
+            span: auto
+            default: 1
+            type: balloon-selector
+            tab: Avancé

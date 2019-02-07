@@ -1,0 +1,10 @@
+name: Matieres
+form: $/simon511000/travail/models/matiere/fields.yaml
+modelClass: Simon511000\Travail\Models\Matiere
+defaultRedirect: simon511000/travail/matieres
+create:
+    redirect: 'simon511000/travail/matieres/update/:id'
+    redirectClose: simon511000/travail/matieres
+update:
+    redirect: simon511000/travail/matieres
+    redirectClose: simon511000/travail/matieres

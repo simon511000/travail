@@ -1,0 +1,12 @@
+list: $/simon511000/travail/models/matiere/columns.yaml
+modelClass: Simon511000\Travail\Models\Matiere
+title: Matieres
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'simon511000/travail/matieres/update/:id'

@@ -1,0 +1,23 @@
+1549545127a:1:{s:22:"me/cahier-de-texte.htm";a:10:{s:8:"fileName";s:22:"me/cahier-de-texte.htm";s:7:"content";s:281:"title = "Cahier de Texte"
+url = "/me/cahier-de-texte"
+layout = "defaut"
+is_hidden = 0
+
+[cahierDeTexte]
+==
+{% if user %}
+  {% for cdt in cahierDeTexte.getUserCDT %}
+    <p>{{ cdt.title }}</p>
+  {% endfor %}
+  
+{% else %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}
+";s:5:"mtime";i:1549183276;s:6:"markup";s:166:"{% if user %}
+  {% for cdt in cahierDeTexte.getUserCDT %}
+    <p>{{ cdt.title }}</p>
+  {% endfor %}
+  
+{% else %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}";s:4:"code";N;s:5:"title";s:15:"Cahier de Texte";s:3:"url";s:19:"/me/cahier-de-texte";s:6:"layout";s:6:"defaut";s:9:"is_hidden";s:1:"0";s:13:"cahierDeTexte";a:0:{}}}

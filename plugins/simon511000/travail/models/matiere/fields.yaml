@@ -1,0 +1,11 @@
+fields:
+    matiere_name:
+        label: Nom
+        span: auto
+        required: 1
+        type: text
+    matiere_color:
+        label: Couleur
+        span: auto
+        default: '#03a9f4'
+        type: colorpicker

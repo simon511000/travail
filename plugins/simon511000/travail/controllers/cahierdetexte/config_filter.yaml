@@ -1,0 +1,11 @@
+scopes :
+  user:
+    label: Utilisateurs
+    modelClass: Rainlab\User\Models\User
+    conditions: user_id in (:filtered)
+    nameFrom: name
+  fait:
+    label: Non fait
+    modelClass: Simon511000\Travail\Models\CahierDeTexte
+    conditions: not fait
+    type: checkbox

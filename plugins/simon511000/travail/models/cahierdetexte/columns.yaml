@@ -1,0 +1,28 @@
+columns:
+    title:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: false
+    when:
+        label: Quand
+        type: date
+        searchable: true
+        sortable: true
+    matiere:
+        label: Matière
+        type: text
+        searchable: true
+        sortable: true
+        select: matiere_name
+        relation: matiere
+    priorite:
+        label: Priorité
+        type: priorite
+    type:
+        label: Type
+        type: type
+    fait:
+        label: Fait
+        type: switch
+        sortable: true

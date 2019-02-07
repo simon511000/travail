@@ -1,0 +1,13 @@
+list: $/simon511000/travail/models/cahierdetexte/columns.yaml
+modelClass: Simon511000\Travail\Models\CahierDeTexte
+title: Cahier De Texte
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+filter: config_filter.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'simon511000/travail/cahierdetexte/update/:id'

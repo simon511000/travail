@@ -1,0 +1,15 @@
+title = "Cahier de Texte"
+url = "/me/cahier-de-texte"
+layout = "defaut"
+is_hidden = 0
+
+[cahierDeTexte]
+==
+{% if user %}
+  {% for cdt in cahierDeTexte.getUserCDT %}
+    <p>{{ cdt.title }}</p>
+  {% endfor %}
+  
+{% else %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}

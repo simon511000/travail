@@ -1,0 +1,10 @@
+name: CahierDeTexte
+form: $/simon511000/travail/models/cahierdetexte/fields.yaml
+modelClass: Simon511000\Travail\Models\CahierDeTexte
+defaultRedirect: simon511000/travail/cahierdetexte
+create:
+    redirect: 'simon511000/travail/cahierdetexte/update/:id'
+    redirectClose: simon511000/travail/cahierdetexte
+update:
+    redirect: simon511000/travail/cahierdetexte
+    redirectClose: simon511000/travail/cahierdetexte

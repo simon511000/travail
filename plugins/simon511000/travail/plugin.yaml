@@ -1,0 +1,16 @@
+plugin:
+    name: 'simon511000.travail::lang.plugin.name'
+    description: 'simon511000.travail::lang.plugin.description'
+    author: simon511000
+    icon: oc-icon-graduation-cap
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Travail
+        url: simon511000/travail/cahierdetexte
+        icon: icon-graduation-cap
+        sideMenu:
+            side-menu-item:
+                label: Matières
+                url: simon511000/travail/matieres
+                icon: icon-coffee
