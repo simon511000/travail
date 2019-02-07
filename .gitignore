@@ -18,9 +18,9 @@ nginx-ssl.error.log
 php-errors.log
 sftp-config.json
 selenium.php
-storage/cms/combiner/assets/*
-storage/cms/sessions/*
-storage/cms/cache/*
+storage/cms/combiner/assets/
+storage/cms/sessions/
+storage/cms/cache/
 
 # for netbeans compiler
 nbproject
