@@ -21,6 +21,7 @@ selenium.php
 storage/cms/combiner/assets/
 storage/cms/sessions/
 storage/cms/cache/
+storage/database.sqlite
 
 # for netbeans compiler
 nbproject
