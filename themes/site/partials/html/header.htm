@@ -1,4 +1,23 @@
 ==
 {% if user %}
-  {{ user.username }}
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark info-color">
+    <a class="navbar-brand" href="{{ 'accueil'|page }}"><i class="fa fa-graduation-cap logo"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+    aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mr-auto">
+      
+        <li class="nav-item" data-partialid="tableau-de-bord">
+          <a class="nav-link" href="{{ 'me-cahier-de-texte'|page }}">Tableau de bord</a>
+        </li>
+        
+        <li class="nav-item" data-partialid="cahier-de-texte">
+          <a class="nav-link" href="{{ 'me-tableau-de-bord'|page }}">Cahier de texte</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
 {% endif %}

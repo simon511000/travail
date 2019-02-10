@@ -1,0 +1,27 @@
+1549778420a:1:{s:24:"page/cahier-de-texte.htm";a:6:{s:8:"fileName";s:24:"page/cahier-de-texte.htm";s:7:"content";s:286:"[cahierDeTexte]
+==
+<?php
+function onStart(){
+  $this["pageid"] = 'cahier-de-texte';
+}
+?>
+==
+<h1>Cahier de texte</h1>
+{% if user %}
+  {% for cdt in cahierDeTexte.getUserCDT %}
+    <p>{{ cdt.title }}</p>
+  {% endfor %}
+  
+{% else %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}";s:5:"mtime";i:1549703497;s:6:"markup";s:192:"<h1>Cahier de texte</h1>
+{% if user %}
+  {% for cdt in cahierDeTexte.getUserCDT %}
+    <p>{{ cdt.title }}</p>
+  {% endfor %}
+  
+{% else %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}";s:4:"code";s:62:"function onStart(){
+  $this["pageid"] = 'cahier-de-texte';
+}";s:13:"cahierDeTexte";a:0:{}}}

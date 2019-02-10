@@ -1,9 +1,0 @@
-1549282112a:1:{s:15:"html/header.htm";a:6:{s:8:"fileName";s:15:"html/header.htm";s:7:"content";s:140:"==
-{% if user %}
-  {{ user.username }}
-  <a data-request="onLogout" data-request-data="redirect: '/good-bye'">Sign out</a>
-{% endif %}
-";s:5:"mtime";i:1549281511;s:6:"markup";s:134:"{% if user %}
-  {{ user.username }}
-  <a data-request="onLogout" data-request-data="redirect: '/good-bye'">Sign out</a>
-{% endif %}";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

@@ -25,7 +25,7 @@ tabs:
             label: Description
             size: small
             span: full
-            type: textarea
+            type: richeditor
             tab: Base
         user:
             label: Utilisateur

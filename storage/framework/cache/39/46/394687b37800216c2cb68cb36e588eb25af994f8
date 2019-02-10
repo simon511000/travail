@@ -1,0 +1,18 @@
+1549779023a:1:{s:11:"accueil.htm";a:9:{s:8:"fileName";s:11:"accueil.htm";s:7:"content";s:194:"title = "Accueil"
+url = "/"
+layout = "defaut"
+is_hidden = 0
+==
+<?php
+function onStart(){
+  return Redirect::to('/me');
+}
+?>
+==
+{% if not user %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}";s:5:"mtime";i:1549702108;s:6:"markup";s:65:"{% if not user %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}";s:4:"code";s:53:"function onStart(){
+  return Redirect::to('/me');
+}";s:5:"title";s:7:"Accueil";s:3:"url";s:1:"/";s:6:"layout";s:6:"defaut";s:9:"is_hidden";s:1:"0";}}

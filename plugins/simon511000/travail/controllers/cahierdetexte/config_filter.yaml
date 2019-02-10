@@ -9,3 +9,4 @@ scopes :
     modelClass: Simon511000\Travail\Models\CahierDeTexte
     conditions: not fait
     type: checkbox
+    default: 1

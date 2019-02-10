@@ -1,0 +1,17 @@
+[cahierDeTexte]
+==
+<?php
+function onStart(){
+  $this["pageid"] = 'cahier-de-texte';
+}
+?>
+==
+<h1>Cahier de texte</h1>
+{% if user %}
+  {% for cdt in cahierDeTexte.getUserCDT %}
+    <p>{{ cdt.title }}</p>
+  {% endfor %}
+  
+{% else %}
+  {% partial 'NestPasConnecte' %}
+{% endif %}

@@ -1,0 +1,68 @@
+1549778452a:1:{s:10:"defaut.htm";a:8:{s:8:"fileName";s:10:"defaut.htm";s:7:"content";s:1173:"[session]
+security = "all"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+
+[easySPA]
+==
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ this.page.title }} | Espace de travail</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ ['assets/css/bootstrap.min.css','assets/css/mdb.min.css','assets/css/style.css']|theme }}">
+  {% styles %}
+</head>
+<body>
+	<header>
+    {% if user %}
+		  {% partial "html/header" %}
+    {% endif %}
+	</header>
+	<main>
+		<div class="container">
+			{% page %}
+		</div>
+	</main>
+	<footer>
+		{% partial "html/footer" %}
+	</footer>
+  <script type="text/javascript" src="{{ ['@jquery','assets/js/popper.min.js','assets/js/bootstrap.min.js', 'assets/js/mdb.min.js', 'assets/js/script.js']|theme }}"></script>
+  {% framework extras %}
+  {% scripts %}
+</body>
+</html>";s:5:"mtime";i:1549777850;s:6:"markup";s:1086:"<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ this.page.title }} | Espace de travail</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ ['assets/css/bootstrap.min.css','assets/css/mdb.min.css','assets/css/style.css']|theme }}">
+  {% styles %}
+</head>
+<body>
+	<header>
+    {% if user %}
+		  {% partial "html/header" %}
+    {% endif %}
+	</header>
+	<main>
+		<div class="container">
+			{% page %}
+		</div>
+	</main>
+	<footer>
+		{% partial "html/footer" %}
+	</footer>
+  <script type="text/javascript" src="{{ ['@jquery','assets/js/popper.min.js','assets/js/bootstrap.min.js', 'assets/js/mdb.min.js', 'assets/js/script.js']|theme }}"></script>
+  {% framework extras %}
+  {% scripts %}
+</body>
+</html>";s:4:"code";N;s:7:"session";a:1:{s:8:"security";s:3:"all";}s:7:"account";a:2:{s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";}s:7:"easySPA";a:0:{}}}

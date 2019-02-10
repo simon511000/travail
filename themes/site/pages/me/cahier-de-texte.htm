@@ -1,15 +1,6 @@
-title = "Cahier de Texte"
+title = "Cahier de texte"
 url = "/me/cahier-de-texte"
 layout = "defaut"
 is_hidden = 0
-
-[cahierDeTexte]
 ==
-{% if user %}
-  {% for cdt in cahierDeTexte.getUserCDT %}
-    <p>{{ cdt.title }}</p>
-  {% endfor %}
-  
-{% else %}
-  {% partial 'NestPasConnecte' %}
-{% endif %}
+<h1>Cahier de texte</h1>{{ this.page.id }}

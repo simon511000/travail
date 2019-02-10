@@ -1,6 +1,7 @@
 <?php namespace Simon511000\Travail;
 
 use System\Classes\PluginBase;
+use Cms\Classes\Theme;
 
 class Plugin extends PluginBase
 {
@@ -41,5 +42,23 @@ class Plugin extends PluginBase
           }
         }
       ];
+    }
+    
+    public function registerSettings()
+    {
+    }
+    
+    public function registerMarkupTags()
+    {
+        return [
+            'functions' => [
+                'partial_exists' => [$this, 'partialExists']
+            ]
+        ];
+    }
+    
+    public function partialExists($file = null, $ext = "htm")
+    {
+        return file_exists(themes_path(Theme::getActiveThemeCode() . '/partials/' . $file . '.' . $ext));
     }
 }

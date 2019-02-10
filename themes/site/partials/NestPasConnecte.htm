@@ -1,2 +1,18 @@
-<h1>Cette page est réservé aux membres !</h1>
-<h2>Veuillez vous connecter.</h2>
+==
+<form class="border border-light p-5" data-request="onSignin">
+
+    <p class="h4 mb-4 text-center">Se connecter</p>
+
+    <input type="text" id="loginPseudo" class="form-control mb-4" placeholder="Pseudo" name="login">
+
+    <input type="password" id="loginMotDePasse" class="form-control mb-4" placeholder="Mot de Passe" name="password">
+
+    <div class="d-flex justify-content-between">
+        <div>
+            <a href="{{ 'mot-de-passe-oublie'|page }}">Mot de passe <s>encore</s> oublié?</a>
+        </div>
+    </div>
+
+    <button class="btn btn-info btn-block my-4" type="submit">Se connecter</button>
+    
+</form>

@@ -1,0 +1,9 @@
+1549779023a:1:{s:23:"mot-de-passe-oublie.htm";a:10:{s:8:"fileName";s:23:"mot-de-passe-oublie.htm";s:7:"content";s:169:"title = "Mot de passe oublié"
+url = "/mot-de-passe-oublie/:code?"
+layout = "defaut"
+is_hidden = 0
+
+[resetPassword]
+paramCode = "code"
+==
+{% component 'resetPassword' %}";s:5:"mtime";i:1549659333;s:6:"markup";s:31:"{% component 'resetPassword' %}";s:4:"code";N;s:5:"title";s:20:"Mot de passe oublié";s:3:"url";s:27:"/mot-de-passe-oublie/:code?";s:6:"layout";s:6:"defaut";s:9:"is_hidden";s:1:"0";s:13:"resetPassword";a:1:{s:9:"paramCode";s:4:"code";}}}

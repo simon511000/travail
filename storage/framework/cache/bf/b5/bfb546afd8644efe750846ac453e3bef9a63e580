@@ -1,0 +1,32 @@
+1549778413a:1:{s:15:"utilisateur.htm";a:9:{s:8:"fileName";s:15:"utilisateur.htm";s:7:"content";s:397:"title = "Utilisateur"
+url = "/me/:page?"
+layout = "defaut"
+is_hidden = 0
+==
+<?php
+function onStart(){
+  
+}
+?>
+==
+{% if not user %}
+  {% partial 'NestPasConnecte' %}
+{% else %}
+  {% set pageParam = this.param.page|default('tableau-de-bord') %}
+  {% if partial_exists('page/'~pageParam) %}
+    {% partial 'page/'~pageParam %}
+  {% else %}
+    {% partial '404' %}
+  {% endif %}
+{% endif %}";s:5:"mtime";i:1549702658;s:6:"markup";s:282:"{% if not user %}
+  {% partial 'NestPasConnecte' %}
+{% else %}
+  {% set pageParam = this.param.page|default('tableau-de-bord') %}
+  {% if partial_exists('page/'~pageParam) %}
+    {% partial 'page/'~pageParam %}
+  {% else %}
+    {% partial '404' %}
+  {% endif %}
+{% endif %}";s:4:"code";s:26:"function onStart(){
+  
+}";s:5:"title";s:11:"Utilisateur";s:3:"url";s:10:"/me/:page?";s:6:"layout";s:6:"defaut";s:9:"is_hidden";s:1:"0";}}

@@ -4,6 +4,8 @@ security = "all"
 [account]
 paramCode = "code"
 forceSecure = 0
+
+[easySPA]
 ==
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,7 +15,7 @@ forceSecure = 0
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ this.page.title }} | Espace de travail</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="//oss.maxcdn.com/semantic-ui/2.1.6/semantic.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ ['assets/css/bootstrap.min.css','assets/css/mdb.min.css','assets/css/style.css']|theme }}">
   {% styles %}
 </head>
 <body>
@@ -30,7 +32,7 @@ forceSecure = 0
 	<footer>
 		{% partial "html/footer" %}
 	</footer>
-  <script type="text/javascript" src="{{ ['@jquery','assets/js/semantic.min.js','assets/js/script.js']|theme }}"></script>
+  <script type="text/javascript" src="{{ ['@jquery','assets/js/popper.min.js','assets/js/bootstrap.min.js', 'assets/js/mdb.min.js', 'assets/js/script.js']|theme }}"></script>
   {% framework extras %}
   {% scripts %}
 </body>
